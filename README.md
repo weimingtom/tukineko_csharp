@@ -8,7 +8,7 @@
 * 2025-01-23, tukineko (pixel-based) csharp v1  
 
 ## Test Data  
-* Need to copy MOON folder from 月姬 (Tsukihime) or 月箱  
+* Need to copy data files to the MOON folder from 月姫 (Tsukihime) or 月箱  
 * https://gitee.com/weimingtom2000/nscripter_java  
 
 ## References    
