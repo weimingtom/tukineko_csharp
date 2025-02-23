@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{047D4557-F95D-4E43-A0B7-7AF69FB27BD8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>tukineko</RootNamespace>
+    <AssemblyName>tukineko</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="java\awt\Color_.cs" />
+    <Compile Include="java\awt\Component.cs" />
+    <Compile Include="java\awt\Dimension.cs" />
+    <Compile Include="java\awt\event\ActionEvent.cs" />
+    <Compile Include="java\awt\event\ActionListener.cs" />
+    <Compile Include="java\awt\event\MouseEvent.cs" />
+    <Compile Include="java\awt\event\MouseListener.cs" />
+    <Compile Include="java\awt\event\WindowAdapter.cs" />
+    <Compile Include="java\awt\event\WindowEvent.cs" />
+    <Compile Include="java\awt\FontMetrics.cs" />
+    <Compile Include="java\awt\Frame.cs" />
+    <Compile Include="java\awt\Graphics_.cs" />
+    <Compile Include="java\awt\Image_.cs" />
+    <Compile Include="java\awt\image\MemoryImageSource.cs" />
+    <Compile Include="java\awt\image\PixelGrabber.cs" />
+    <Compile Include="java\awt\MediaTracker.cs" />
+    <Compile Include="java\awt\Menu.cs" />
+    <Compile Include="java\awt\Panel_.cs" />
+    <Compile Include="java\awt\PopupMenu.cs" />
+    <Compile Include="java\awt\Toolkit.cs" />
+    <Compile Include="java\io\ByteArrayInputStream.cs" />
+    <Compile Include="java\io\ByteArrayOutputStream.cs" />
+    <Compile Include="java\io\FileInputStream.cs" />
+    <Compile Include="java\io\FileOutputStream.cs" />
+    <Compile Include="java\io\File_.cs" />
+    <Compile Include="java\io\InputStream.cs" />
+    <Compile Include="java\io\IOException.cs" />
+    <Compile Include="java\io\ObjectInputStream.cs" />
+    <Compile Include="java\io\ObjectOutputStream.cs" />
+    <Compile Include="java\io\OutputStream.cs" />
+    <Compile Include="java\io\RandomAccessFile.cs" />
+    <Compile Include="java\io\WrappedSystemStream.cs" />
+    <Compile Include="java\lang\InterruptedException.cs" />
+    <Compile Include="java\lang\NumberFormatException.cs" />
+    <Compile Include="java\lang\Runtime.cs" />
+    <Compile Include="java\lang\Thread_.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tukineko\entry\NsButton.cs" />
+    <Compile Include="tukineko\entry\NsColor.cs" />
+    <Compile Include="tukineko\entry\NsData.cs" />
+    <Compile Include="tukineko\entry\NsEffect.cs" />
+    <Compile Include="tukineko\entry\NsGosub.cs" />
+    <Compile Include="tukineko\entry\NsSelect.cs" />
+    <Compile Include="tukineko\entry\NsShell.cs" />
+    <Compile Include="tukineko\entry\NsSprite.cs" />
+    <Compile Include="tukineko\entry\NsText.cs" />
+    <Compile Include="tukineko\file\NsaEntry.cs" />
+    <Compile Include="tukineko\file\NsaFile.cs" />
+    <Compile Include="tukineko\file\NsaInputStream.cs" />
+    <Compile Include="tukineko\file\SarEntry.cs" />
+    <Compile Include="tukineko\file\SarFile.cs" />
+    <Compile Include="tukineko\file\SarInputStream.cs" />
+    <Compile Include="tukineko\global\NsImage.cs" />
+    <Compile Include="tukineko\global\NsImageCache.cs" />
+    <Compile Include="tukineko\global\NsResource.cs" />
+    <Compile Include="tukineko\global\NsThread.cs" />
+    <Compile Include="tukineko\global\NsTimer.cs" />
+    <Compile Include="tukineko\global\NsValueStorage.cs" />
+    <Compile Include="tukineko\NsActionListener.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\BtnCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\BtndefCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\Btnwait2Command.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\BtnwaitCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\ClickCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\ClickposCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\DefineresetCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\DelayCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\ECommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\GettimerCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\InputstrCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\LookbackflushCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\ResetCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\ResettimerCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\RmodeCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\SelectCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\SelgosubCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\SelnumCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\SystemcallCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\TextspeedCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\TrapCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\WaitCommand.cs" />
+    <Compile Include="tukineko\nsdumper\ecmd\WaittimerCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fcmd\FCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fcmd\GameCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fcmd\IntlimitCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fcmd\SavenumberCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\AddCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\AtoiCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\CmpCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\DateCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\DecCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\DivCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\EndCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\FECommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\GetiniCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\GetregCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\GosubCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\GotoCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\IfCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\IncCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\ItoaCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\JumpbCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\JumpfCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\LoadgameCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\ModCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\MovCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\MulCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\NotifCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\ReturnCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\Rnd2Command.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\RndCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\SavegameCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\SaveoffCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\SaveonCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\SkipCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\SubCommand.cs" />
+    <Compile Include="tukineko\nsdumper\fecmd\TimeCommand.cs" />
+    <Compile Include="tukineko\nsdumper\parser\NSParser.cs" />
+    <Compile Include="tukineko\nsdumper\secmd\AbssetcursorCommand.cs" />
+    <Compile Include="tukineko\nsdumper\secmd\SECommand.cs" />
+    <Compile Include="tukineko\nsdumper\secmd\SetcursorCommand.cs" />
+    <Compile Include="tukineko\nsdumper\secmd\SetwindowCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\ArcCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\BgaliaCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\CdfadeoutCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\ClickstrCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\ClickvoiceCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\DefaultfontCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\DefSpeedCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\DsoundCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\EffectblankCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\EffectCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\FilelogCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\GlobalonCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\HumanzCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\KillmenuCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\LabellogCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\LookbackbuttonCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\LookbackcolorCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\LookbackvoiceCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\MenuselectcolorCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\MenuselectvoiceCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\MenusetwindowCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\NsaCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\NumaliasCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\RlookbackCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\RmenuCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\RoffCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\SavenameCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\SelectcolorCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\SelectvoiceCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\SFCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\SoundpressplginCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\SpiCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\StraliasCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\TransmodeCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\UnderlineCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfcmd\VersionstrCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfecmd\CaptionCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfecmd\GetversionCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfecmd\MousecursorCommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfecmd\SFECommand.cs" />
+    <Compile Include="tukineko\nsdumper\sfecmd\WindoweffectCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\AutoclickCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\AviCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\BgCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\BltCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\BrCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\ClCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\CspCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\DwaveCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\DwaveloopCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\DwavestopCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\ErasetextwindowCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\LdCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\LocateCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\LspCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\LsphCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\MenuclickdefCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\MenuclickpageCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\MenufullCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\MenuwindowCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\MonocroCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\Mp3Command.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\Mp3loopCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\MspCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\NegaCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\OfscpyCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\PlayCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\PlayonceCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\PlaystopCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\PrintCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\PuttextCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\QuakexCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\QuakeyCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\StopCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\TalCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\TextclearCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\TextoffCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\TextonCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\VECommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\VspCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\WaveCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\WaveloopCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vecmd\WavestopCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vfecmd\MesboxCommand.cs" />
+    <Compile Include="tukineko\nsdumper\vfecmd\VFECommand.cs" />
+    <Compile Include="tukineko\NsWindow.cs" />
+    <Compile Include="tukineko\parser\NScripter.cs" />
+    <Compile Include="tukineko\parser\Util.cs" />
+    <Compile Include="tukineko\Tukineko.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="data\0.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\scr.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="KAGETU.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="MOON.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PLUS.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data" />
+    <Folder Include="java" />
+    <Folder Include="java\awt\event" />
+    <Folder Include="java\awt\image" />
+    <Folder Include="java\io" />
+    <Folder Include="java\lang" />
+    <Folder Include="java\awt" />
+    <Folder Include="tukineko" />
+    <Folder Include="tukineko\entry" />
+    <Folder Include="tukineko\file" />
+    <Folder Include="tukineko\global" />
+    <Folder Include="tukineko\nsdumper" />
+    <Folder Include="tukineko\nsdumper\ecmd" />
+    <Folder Include="tukineko\nsdumper\fcmd" />
+    <Folder Include="tukineko\nsdumper\fecmd" />
+    <Folder Include="tukineko\nsdumper\parser" />
+    <Folder Include="tukineko\nsdumper\secmd" />
+    <Folder Include="tukineko\nsdumper\sfcmd" />
+    <Folder Include="tukineko\nsdumper\sfecmd" />
+    <Folder Include="tukineko\nsdumper\vecmd" />
+    <Folder Include="tukineko\nsdumper\vfecmd" />
+    <Folder Include="tukineko\parser" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
