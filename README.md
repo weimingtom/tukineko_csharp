@@ -8,8 +8,12 @@
 * 2025-01-23, tukineko (pixel-based) csharp v1  
 
 ## Test Data  
+* Please BUY the Game
 * Need to copy data files to the MOON folder from 月姫 (Tsukihime) or 月箱  
-* https://gitee.com/weimingtom2000/nscripter_java  
+* (x) https://gitee.com/weimingtom2000/nscripter_java  
+* (Please BUY the Game) Or from 同人ゲーム詰め合わせ, (同人ゲーム) 月姫.rar   
+https://archive.org/details/doujin-game-tsumeawase   
+but You need complex operations to obtain the game files from these files, so you had better buy the game.    
 
 ## References    
 * http://www.din.or.jp/~boya/tsukihime/tukineko/index.html  
